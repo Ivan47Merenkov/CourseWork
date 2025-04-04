@@ -1,0 +1,71 @@
+.info-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #ffffff, #ffedd5, #ffffff);
+}
+
+.page-container {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-card {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.info-card-content {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #ffedd5;
+}
+
+.info-card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a202c;
+  background: linear-gradient(to right, #ffedd5, #ffffff);
+  padding: 1.5rem;
+  border-bottom: 1px solid #ffedd5;
+}
+
+.info-card-text {
+  font-size: 1.125rem;
+  color: #4a5568;
+  line-height: 1.75;
+  padding: 1.5rem;
+  background: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .info-card-title {
+    font-size: 1.5rem;
+  }
+  .info-card-text {
+    font-size: 1rem;
+  }
+}
+
+.info-card-text::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.info-card-text::-webkit-scrollbar-track {
+  background: #ffedd5;
+  border-radius: 9999px;
+}
+
+.info-card-text::-webkit-scrollbar-thumb {
+  background: #fbd38d;
+  border-radius: 9999px;
+  transition: background 0.2s;
+}
+
+.info-card-text::-webkit-scrollbar-thumb:hover {
+  background: #f6ad55;
+}
