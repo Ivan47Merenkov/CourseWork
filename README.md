@@ -2,8 +2,4 @@ When running the project in Visual Studio Code, delete the .gitignore file so th
 
 More detailed instructions on how to start the project are in the report.
 
-(
-npm install
-npm node server.js
-npm run dev
-)
+( npm install --- npm node server.js --- npm run dev )
